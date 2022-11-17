@@ -50,21 +50,23 @@ def btn_clicked():
         #print("yes")
         for i in li_label:
             i.destroy()
-            li_label.pop(0)
-    if(len(li_label)>0):
+            #li_label.remove(i)
+    li_label.clear()
+        #print(len(li_label))
+    """if(len(li_label)>0):
         while(len(li_label)!=0):
             li_label[-1].destroy()
-            li_label.pop()
+            li_label.pop()"""
     if(len(li_play)!=0):
         for i in li_play:
             i.destroy()
-            li_play.pop(0)
-    if(len(li_play)>0):
+    li_play.clear()
+    """if(len(li_play)>0):
         while(len(li_play)!=0):
             li_play[-1].destroy()
-            li_play.pop()
+            li_play.pop()"""
 
-    print(len(li_label))
+    
     
     print(entry0.get())
     event=entry0.get()
@@ -112,6 +114,7 @@ def btn_clicked():
 dict={
     "walking":[[r"C:\Users\User\Documents\CAPSTONE\volcano.jpg",7],
                 [r"C:\Users\User\Documents\CAPSTONE\cat.jpg",87],
+                [r"C:\Users\User\Documents\CAPSTONE\cat_walk.jpg",87],
                 
 
                 ],
